@@ -1,0 +1,205 @@
+*{
+
+}
+body{
+	font-family: georgia, times, serif;
+	color: #333;
+	font-size: 1.3rem;
+	line-height: 1.6em;
+	margin: 0;
+}
+
+h1{
+	font-size: 2rem;
+	line-height: 1.3em;
+}
+
+p{
+	margin-bottom: 1.6em;
+}
+
+.section-full{
+	min-height: 100vh;
+	padding: 9rem 3rem;
+	/*aun no puedo poner fondo medio transparente*/
+	/*position: relative; mueve sobre barra menu*/
+	/*transition: opacity 0.4s;*/
+}
+
+.flat-button{
+	color: darkblue;
+	font-size: 14px;
+	letter-spacing: 4px;
+	font-family: "Open Sans",sans-serif;
+	text-decoration: none;
+	margin-top: 20px;
+	width: 100%;
+	max-width: 220px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	text-align: center;
+}
+
+.section-full .text-zone{}
+
+.container{
+	width: 100%;
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+.header{
+	background: #333;
+	color: white;
+	padding: 2rem 0;
+
+	position: fixed;/*header fijo*/
+	left: 0;
+	top: 0;
+	right: 0;
+}
+
+.header a{
+	color: white;
+	text-decoration: none;
+}
+
+.logo-nav-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	flex-wrap: wrap;/*algo ancho va bajo logo ´media´*/
+}
+
+.logo{
+	letter-spacing: 15px;
+	font-size: 1.4em;
+}
+.logoImg{
+	height: 60px;
+}
+
+.menu-icon{
+	display: none;
+}
+
+.navigation ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+	.navigation ul li{
+			display: inline-block;
+	}
+
+		.navigation ul li a{
+			display: block;
+			padding: 0.5rem 1rem;
+			transition: all 0.3s linear;
+			border-radius: 5px;
+		}
+
+			.navigation ul li a:hover{
+				background: #4a4a4a;
+			}
+
+.logo{
+	height: 35px;
+}
+
+.main{
+	padding-top: 6rem;/*falseo el espacio para el menu flotante*/
+}
+
+.footer{
+	background: #f2f2f2;
+	padding: 4rem 0; /*4rem arriba y abajo 0 a los costados*/
+	text-align: center;
+	margin-top: 6rem;
+}
+
+/**/
+@media only screen and (max-width: 767px/*ancho*/){
+	.menu-icon{
+		display: block;
+		cursor: pointer;
+	}
+
+	.navigation{
+		width: 100%;
+		margin-top: 1rem;/*entre logo y botones*/
+	}
+
+		.navigation ul{
+			display: none;
+		}
+		.navigation ul.show{
+			display: block;
+		}
+			.navigation ul li{
+				display: block;
+			}
+
+				.navigation ul li a{
+					display: block;
+					padding: 0.5rem 0rem;
+					transition: all 0.3s linear;
+					border-radius: 5px;
+				}
+
+					.navigation ul li a:hover{
+						background: #4a4a4a;
+					}
+}
+
+#box-container {
+    display: flex;
+    /*height: 500px;*/
+  }
+  
+#box1{
+	background: gray;
+	flex: 1 2 auto;
+}
+#box2{
+	background: lightblue;
+	flex: 2 1 auto;
+}
+
+#top
+{
+    top: 0px;
+    left: 0px;
+    background-color: green;
+    color: white;
+    font-size: 20pt;
+    height: 200px; 
+    width: 200px;
+    opacity:0.8;
+    filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.img-1{
+	background-image: url(construccion_site.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.img-2{
+	background-image: url(contacto_img.jpg);
+}
+.img-3{
+	background-image: url(educacion_img.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.img-4{
+	background-image: url(https://img.freepik.com/vector-gratis/concepto-o-simbolo-trabajo-equipo-engranajes-engranajes_98292-4444.jpg?w=740&t=st=1662338848~exp=1662339448~hmac=92d78a66f76c9d218a22e910457b6e13235e370912fc322b606ad0af70c9e3c9);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	/* height: ; */
+}
